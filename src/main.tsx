@@ -2,6 +2,7 @@ import { ChakraProvider, Flex } from "@chakra-ui/react";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+import { Footer } from "./components/footer";
 import Header from "./components/header";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 import { Router } from "./routes";
@@ -29,6 +30,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             bg="backgroundColor"
           >
             <Router />
+          </Flex>
+          <Flex justifyContent="center">
+            <Footer />
           </Flex>
         </BrowserRouter>
       </ShoppingCartProvider>
