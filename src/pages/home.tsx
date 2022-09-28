@@ -5,6 +5,7 @@ import { CatalogItem } from "../types/products";
 import { items } from "../utils/catalogItems";
 
 import banner from "../assets/banner.png"
+import { Footer } from "../components/footer";
 
 function Home() {
   return (
@@ -36,6 +37,7 @@ function Home() {
           );
         })}
       </Grid>
+      <Footer />
     </Box>
   );
 }

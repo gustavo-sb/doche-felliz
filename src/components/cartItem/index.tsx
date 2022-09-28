@@ -6,9 +6,10 @@ import { useShoppingCart } from "./../../context/ShoppingCartContext";
 interface Props {
   id: number;
   quantity: number;
+  hasRemoveButton?: boolean
 }
 
-export const CartItem = ({ id, quantity }: Props) => {
+export const CartItem = ({ id, quantity, hasRemoveButton = true }: Props) => {
   const { removeFromCart } = useShoppingCart();
   const item = items.find((i) => i.id === id);
   if (item == null) return null;
@@ -36,12 +37,14 @@ export const CartItem = ({ id, quantity }: Props) => {
         </Stack>
         <Text>R${Number(item.price) * quantity}</Text>
       </Flex>
-      <IconButton
-        aria-label="remove"
-        colorScheme="red"
-        icon={<FiTrash2 />}
-        onClick={() => removeFromCart(id)}
-      />
+      {hasRemoveButton && (
+        <IconButton
+          aria-label="remove"
+          colorScheme="red"
+          icon={<FiTrash2 />}
+          onClick={() => removeFromCart(id)}
+        />
+      )}
     </HStack>
   );
 };

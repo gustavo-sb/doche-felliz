@@ -49,7 +49,7 @@ export const Cart = ({ isOpen, onClose }: Props) => {
         <DrawerFooter>
           {cartItems.length > 0 && (
             <Stack w="100%">
-              <Box>
+              <Flex w="100%" justifyContent="flex-end">
                 <Text fontWeight="bold" fontSize={20}>
                   Subtotal: R$
                   {cartItems.reduce((total, cartItem) => {
@@ -57,7 +57,7 @@ export const Cart = ({ isOpen, onClose }: Props) => {
                     return total + (item?.price || 0) * cartItem.quantity;
                   }, 0)}
                 </Text>
-              </Box>
+              </Flex>
               <Flex w="100%" justifyContent="flex-end" alignItems="flex-end">
                 <HStack>
                   <Button label="Cancelar" onClick={onClose} />
