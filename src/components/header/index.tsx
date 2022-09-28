@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { Menu } from "../menu";
 
-import logo from "../../../public/logo-doche-felliz.svg";
+import logo from "../../assets/logo-doche-felliz.svg";
 import { Button } from "../button";
 import { FiShoppingCart } from "react-icons/fi";
 import { Cart } from "../cart";
@@ -25,13 +25,6 @@ const NavButtons = () => {
       <Button
         label="Home"
         link="/"
-        variant="outline"
-        colorScheme="whiteAlpha"
-        color="white"
-      />
-      <Button
-        label="Catalog"
-        link="/catalog"
         variant="outline"
         colorScheme="whiteAlpha"
         color="white"
@@ -88,7 +81,6 @@ export default function Header() {
               <Menu
                 options={[
                   { label: "Home", link: "/" },
-                  { label: "Catalog", link: "/catalog" },
                   { label: "About", link: "/about" },
                 ]}
               />

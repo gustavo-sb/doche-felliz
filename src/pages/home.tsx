@@ -1,15 +1,25 @@
-import { Box, Flex, Grid, GridItem, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Text, Image } from "@chakra-ui/react";
 import { Card } from "../components/card";
 import { CatalogItem } from "../types/products";
 
 import { items } from "../utils/catalogItems";
 
+import banner from "../assets/banner.png"
+
 function Home() {
   return (
     <Box>
+      <Box w="100%" mt="0.25rem">
+        <Image src={banner} alt="banner" />
+      </Box>
+
+      <Flex m="2rem 0" justifyContent="center" alignItems="center">
+        <Text fontWeight="bold" fontSize={30}>Catálogo</Text>
+      </Flex>
+
       <Grid templateColumns={{
         base: 'repeat(1, 1fr)',
-        md: 'repeat(2, 1fr)',
+        md: 'repeat(1, 1fr)',
         lg: 'repeat(2, 1fr)'
       }}>
         {items.map((item: CatalogItem) => {

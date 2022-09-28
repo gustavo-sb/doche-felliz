@@ -7,17 +7,10 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { FiMinus, FiPlus, FiTrash2 } from "react-icons/fi";
+import { CatalogItem } from "../../types/products";
 import { useShoppingCart } from "./../../context/ShoppingCartContext";
 
-interface Props {
-  id: number;
-  name: string;
-  image: string;
-  details: string;
-  price: string;
-}
-
-export const Card = ({ id, name, image, details, price }: Props) => {
+export const Card = ({ id, name, image, details, price }: CatalogItem) => {
   const {
     getItemQuantity,
     increaseCartQuantity,

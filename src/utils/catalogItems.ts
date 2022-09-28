@@ -16,76 +16,76 @@ export const items = [
     name: "Bolo de Cenoura",
     image: boloCenoura,
     details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    price: "15.50"
+    price: 15.50
   },
   {
     id: 2,
     name: "Bolo de Fuba",
     image: boloFuba,
     details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    price: "15.50"
+    price: 15.50
   },
   {
     id: 3,
     name: "Torta de Frango",
     image: tortaFrango,
     details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    price: "7.50"
+    price: 7.50
   },
   {
     id: 4,
     name: "Quiche",
     image: quiche,
     details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    price: "10.00"
+    price: 10.00
   },
   {
     id: 5,
     name: "Sonho",
     image: sonho,
     details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    price: "2.50"
+    price: 2.50
   },
   {
     id: 6,
     name: "Baguete de Chocolate",
     image: bagueteChocolate,
     details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    price: "4.00"
+    price: 4.00
   },
   {
     id: 7,
     name: "Macarron",
     image: macarron,
     details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    price: "5.00"
+    price: 5.00
   },
   {
     id: 8,
     name: "Cookie",
     image: cookies,
     details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    price: "5.50"
+    price: 5.50
   },
   {
     id: 9,
     name: "Parfait",
     image: parfait,
     details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    price: "24.50"
+    price: 24.50
   },
   {
     id: 10,
     name: "Brigadeiro sem Lactose",
     image: brigadeiro,
     details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    price: "7.50"
+    price: 7.50
   },
   {
     id: 11,
     name: "Torta de Morango",
     image: tortaMorango,
     details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    price: "13.50"
+    price: 13.50
   },
 ]

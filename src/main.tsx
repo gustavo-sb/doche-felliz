@@ -31,7 +31,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           >
             <Router />
           </Flex>
-          <Flex justifyContent="center">
+          <Flex justifyContent="center" position="relative" bottom={0}>
             <Footer />
           </Flex>
         </BrowserRouter>

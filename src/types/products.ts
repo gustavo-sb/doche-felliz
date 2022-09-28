@@ -3,5 +3,5 @@ export type CatalogItem = {
   name: string;
   image: string;
   details: string;
-  price: string;
+  price: number;
 };
