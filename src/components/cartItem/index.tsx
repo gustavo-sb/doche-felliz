@@ -15,7 +15,7 @@ export const CartItem = ({ id, quantity, hasRemoveButton = true }: Props) => {
   if (item == null) return null;
 
   return (
-    <HStack w="100%">
+    <HStack w="100%" m="1rem 0">
       <Image
         borderRadius="full"
         boxSize="80px"
