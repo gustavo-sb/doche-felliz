@@ -31,7 +31,6 @@ const NavButtons = () => {
       />
       <Button
         label="About"
-        link="/about"
         variant="outline"
         colorScheme="whiteAlpha"
         color="white"
